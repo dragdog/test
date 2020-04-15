@@ -1,0 +1,254 @@
+$**************  SCADETOC Version 18.2 (build i9) **************
+** Generation date: 2020-03-25T17:27:50
+** Command: scade -code "E:\TCT\OC\OC_SCADE20190613\OC_SCADE.etp" -root TrainManage::TrainIsLCT,TrainManage::FindInsertIndexByFlag,TrainManage::TrainIsVT,ScadeOCPeriodMain -conf KCG
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ScadeOCPeriodMain.c, line 0, character 0
+ ~ScadeOCPeriodMain.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PhySecBlockManage_PhySecBlockManage.c, line 0, character 0
+ ~PhySecBlockManage_PhySecBlockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PhySecBlockManage_each1_PhySecBlockManage.c, line 0, character 0
+ ~PhySecBlockManage_each1_PhySecBlockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindInsertIndexPhySecBlock_PhySecBlockManage.c, line 0, character 0
+ ~FindInsertIndexPhySecBlock_PhySecBlockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PhySecBlockManage_each2_PhySecBlockManage.c, line 0, character 0
+ ~PhySecBlockManage_each2_PhySecBlockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TSRManage_TSRManage.c, line 0, character 0
+ ~TSRManage_TSRManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TSRManage_each_TSRManage.c, line 0, character 0
+ ~TSRManage_each_TSRManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\JumpTrainManage_JumpTrainManage.c, line 0, character 0
+ ~JumpTrainManage_JumpTrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\JumpTrainManage_each_JumpTrainManage.c, line 0, character 0
+ ~JumpTrainManage_each_JumpTrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HoldTrainManage_HoldTrainManage.c, line 0, character 0
+ ~HoldTrainManage_HoldTrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HoldTrainManage_each_HoldTrainManage.c, line 0, character 0
+ ~HoldTrainManage_each_HoldTrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\GetInsertLocation_HoldTrainManage.c, line 0, character 0
+ ~GetInsertLocation_HoldTrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindHoldTrain_HoldTrainManage.c, line 0, character 0
+ ~FindHoldTrain_HoldTrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_MultSwitchManage.c, line 0, character 0
+ ~DeleteLock_MultSwitch_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_C1_MultSwitchManage.c, line 0, character 0
+ ~DeleteLock_MultSwitch_C1_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_C2_MultSwitchManage.c, line 0, character 0
+ ~DeleteLock_MultSwitch_C2_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_C3_MultSwitchManage.c, line 0, character 0
+ ~DeleteLock_MultSwitch_C3_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_MultSwitchManage.c, line 0, character 0
+ ~AddLock_MultSwitch_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_C1_MultSwitchManage.c, line 0, character 0
+ ~AddLock_MultSwitch_C1_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_C2_MultSwitchManage.c, line 0, character 0
+ ~AddLock_MultSwitch_C2_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindULockFlagFalse_MultSwitchManage.c, line 0, character 0
+ ~FindULockFlagFalse_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindULockFlagFalse_C_MultSwitchManage.c, line 0, character 0
+ ~FindULockFlagFalse_C_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_C3_MultSwitchManage.c, line 0, character 0
+ ~AddLock_MultSwitch_C3_MultSwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PowerLockDelManage_PowerLockDeleteManage.c, line 0, character 0
+ ~PowerLockDelManage_PowerLockDeleteManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SignalCtrl_SignalCtrl.c, line 0, character 0
+ ~SignalCtrl_SignalCtrl.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindSignalSource_SignalCtrl.c, line 0, character 0
+ ~FindSignalSource_SignalCtrl.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainManage_TrainManage.c, line 0, character 0
+ ~TrainManage_TrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DATrainCmdProc_TrainManage.c, line 0, character 0
+ ~DATrainCmdProc_TrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DATrainCmdProc_each_TrainManage.c, line 0, character 0
+ ~DATrainCmdProc_each_TrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainInfoValidManage_TrainManage.c, line 0, character 0
+ ~TrainInfoValidManage_TrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchManage_SwitchManage.c, line 0, character 0
+ ~SwitchManage_SwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSDeleteLock_SwitchManage_ATSDeleteLockManage.c, line 0, character 0
+ ~ATSDeleteLock_SwitchManage_ATSDeleteLockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchManage_each_SwitchManage.c, line 0, character 0
+ ~SwitchManage_each_SwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSLockDeleteManage_each_SwitchManage_ATSDeleteLockManage.c, line 0, character 0
+ ~ATSLockDeleteManage_each_SwitchManage_ATSDeleteLockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindSwitchByATSLockDelCmd_SwitchManage_ATSDeleteLockManage.c, line 0, character 0
+ ~FindSwitchByATSLockDelCmd_SwitchManage_ATSDeleteLockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\GetSwitchMoveState_SwitchManage_MoveStateManage.c, line 0, character 0
+ ~GetSwitchMoveState_SwitchManage_MoveStateManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchNeedMove_SwitchManage_MoveStateManage.c, line 0, character 0
+ ~SwitchNeedMove_SwitchManage_MoveStateManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchAddorDelLock_SwitchManage.c, line 0, character 0
+ ~SwitchAddorDelLock_SwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLockManage_each_SwitchManage_AddLockManage.c, line 0, character 0
+ ~AddLockManage_each_SwitchManage_AddLockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HCOCLockCmdProc_SwitchManage_AddLockManage.c, line 0, character 0
+ ~HCOCLockCmdProc_SwitchManage_AddLockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\VOBCorTMCLockCmdProc_SwitchManage_AddLockManage.c, line 0, character 0
+ ~VOBCorTMCLockCmdProc_SwitchManage_AddLockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSLockCmdProc_SwitchManage_AddLockManage.c, line 0, character 0
+ ~ATSLockCmdProc_SwitchManage_AddLockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchNeedReset_each_SwitchManage.c, line 0, character 0
+ ~SwitchNeedReset_each_SwitchManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\RegionBlockManage_RegionBlockManage.c, line 0, character 0
+ ~RegionBlockManage_RegionBlockManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\CmdValidityManage_Lock_SwitchCommandInvalidManage.c, line 0, character 0
+ ~CmdValidityManage_Lock_SwitchCommandInvalidManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c, line 0, character 0
+ ~SwitchCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HCOCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c, line 0, character 0
+ ~HCOCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\VOBCorTMCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c, line 0, character 0
+ ~VOBCorTMCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\LockCmdIsValidByATS_Lock_SwitchCommandInvalidManage.c, line 0, character 0
+ ~LockCmdIsValidByATS_Lock_SwitchCommandInvalidManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c, line 0, character 0
+ ~ATSLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\LockCmdIsValidBySwitch_Lock_SwitchCommandInvalidManage.c, line 0, character 0
+ ~LockCmdIsValidBySwitch_Lock_SwitchCommandInvalidManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainIsLCT.c, line 0, character 0
+ ~TrainIsLCT.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainIsVT.c, line 0, character 0
+ ~TrainIsVT.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindInsertIndexByFlag_TrainManage.c, line 0, character 0
+ ~FindInsertIndexByFlag_TrainManage.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ScadeOCPeriodMain.h, line 0, character 0
+ ~ScadeOCPeriodMain.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PhySecBlockManage_PhySecBlockManage.h, line 0, character 0
+ ~PhySecBlockManage_PhySecBlockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PhySecBlockManage_each1_PhySecBlockManage.h, line 0, character 0
+ ~PhySecBlockManage_each1_PhySecBlockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindInsertIndexPhySecBlock_PhySecBlockManage.h, line 0, character 0
+ ~FindInsertIndexPhySecBlock_PhySecBlockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PhySecBlockManage_each2_PhySecBlockManage.h, line 0, character 0
+ ~PhySecBlockManage_each2_PhySecBlockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TSRManage_TSRManage.h, line 0, character 0
+ ~TSRManage_TSRManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TSRManage_each_TSRManage.h, line 0, character 0
+ ~TSRManage_each_TSRManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\JumpTrainManage_JumpTrainManage.h, line 0, character 0
+ ~JumpTrainManage_JumpTrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\JumpTrainManage_each_JumpTrainManage.h, line 0, character 0
+ ~JumpTrainManage_each_JumpTrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HoldTrainManage_HoldTrainManage.h, line 0, character 0
+ ~HoldTrainManage_HoldTrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HoldTrainManage_each_HoldTrainManage.h, line 0, character 0
+ ~HoldTrainManage_each_HoldTrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\GetInsertLocation_HoldTrainManage.h, line 0, character 0
+ ~GetInsertLocation_HoldTrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindHoldTrain_HoldTrainManage.h, line 0, character 0
+ ~FindHoldTrain_HoldTrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_MultSwitchManage.h, line 0, character 0
+ ~DeleteLock_MultSwitch_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_C1_MultSwitchManage.h, line 0, character 0
+ ~DeleteLock_MultSwitch_C1_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_C2_MultSwitchManage.h, line 0, character 0
+ ~DeleteLock_MultSwitch_C2_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DeleteLock_MultSwitch_C3_MultSwitchManage.h, line 0, character 0
+ ~DeleteLock_MultSwitch_C3_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_MultSwitchManage.h, line 0, character 0
+ ~AddLock_MultSwitch_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_C1_MultSwitchManage.h, line 0, character 0
+ ~AddLock_MultSwitch_C1_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_C2_MultSwitchManage.h, line 0, character 0
+ ~AddLock_MultSwitch_C2_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindULockFlagFalse_MultSwitchManage.h, line 0, character 0
+ ~FindULockFlagFalse_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindULockFlagFalse_C_MultSwitchManage.h, line 0, character 0
+ ~FindULockFlagFalse_C_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLock_MultSwitch_C3_MultSwitchManage.h, line 0, character 0
+ ~AddLock_MultSwitch_C3_MultSwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\PowerLockDelManage_PowerLockDeleteManage.h, line 0, character 0
+ ~PowerLockDelManage_PowerLockDeleteManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SignalCtrl_SignalCtrl.h, line 0, character 0
+ ~SignalCtrl_SignalCtrl.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindSignalSource_SignalCtrl.h, line 0, character 0
+ ~FindSignalSource_SignalCtrl.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainManage_TrainManage.h, line 0, character 0
+ ~TrainManage_TrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DATrainCmdProc_TrainManage.h, line 0, character 0
+ ~DATrainCmdProc_TrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\DATrainCmdProc_each_TrainManage.h, line 0, character 0
+ ~DATrainCmdProc_each_TrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainInfoValidManage_TrainManage.h, line 0, character 0
+ ~TrainInfoValidManage_TrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchManage_SwitchManage.h, line 0, character 0
+ ~SwitchManage_SwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSDeleteLock_SwitchManage_ATSDeleteLockManage.h, line 0, character 0
+ ~ATSDeleteLock_SwitchManage_ATSDeleteLockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchManage_each_SwitchManage.h, line 0, character 0
+ ~SwitchManage_each_SwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSLockDeleteManage_each_SwitchManage_ATSDeleteLockManage.h, line 0, character 0
+ ~ATSLockDeleteManage_each_SwitchManage_ATSDeleteLockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindSwitchByATSLockDelCmd_SwitchManage_ATSDeleteLockManage.h, line 0, character 0
+ ~FindSwitchByATSLockDelCmd_SwitchManage_ATSDeleteLockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\GetSwitchMoveState_SwitchManage_MoveStateManage.h, line 0, character 0
+ ~GetSwitchMoveState_SwitchManage_MoveStateManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchNeedMove_SwitchManage_MoveStateManage.h, line 0, character 0
+ ~SwitchNeedMove_SwitchManage_MoveStateManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchAddorDelLock_SwitchManage.h, line 0, character 0
+ ~SwitchAddorDelLock_SwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\AddLockManage_each_SwitchManage_AddLockManage.h, line 0, character 0
+ ~AddLockManage_each_SwitchManage_AddLockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HCOCLockCmdProc_SwitchManage_AddLockManage.h, line 0, character 0
+ ~HCOCLockCmdProc_SwitchManage_AddLockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\VOBCorTMCLockCmdProc_SwitchManage_AddLockManage.h, line 0, character 0
+ ~VOBCorTMCLockCmdProc_SwitchManage_AddLockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSLockCmdProc_SwitchManage_AddLockManage.h, line 0, character 0
+ ~ATSLockCmdProc_SwitchManage_AddLockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchNeedReset_each_SwitchManage.h, line 0, character 0
+ ~SwitchNeedReset_each_SwitchManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\RegionBlockManage_RegionBlockManage.h, line 0, character 0
+ ~RegionBlockManage_RegionBlockManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\CmdValidityManage_Lock_SwitchCommandInvalidManage.h, line 0, character 0
+ ~CmdValidityManage_Lock_SwitchCommandInvalidManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\SwitchCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h, line 0, character 0
+ ~SwitchCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\HCOCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h, line 0, character 0
+ ~HCOCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\VOBCorTMCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h, line 0, character 0
+ ~VOBCorTMCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\LockCmdIsValidByATS_Lock_SwitchCommandInvalidManage.h, line 0, character 0
+ ~LockCmdIsValidByATS_Lock_SwitchCommandInvalidManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\ATSLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h, line 0, character 0
+ ~ATSLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\LockCmdIsValidBySwitch_Lock_SwitchCommandInvalidManage.h, line 0, character 0
+ ~LockCmdIsValidBySwitch_Lock_SwitchCommandInvalidManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainIsLCT.h, line 0, character 0
+ ~TrainIsLCT.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\TrainIsVT.h, line 0, character 0
+ ~TrainIsVT.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\FindInsertIndexByFlag_TrainManage.h, line 0, character 0
+ ~FindInsertIndexByFlag_TrainManage.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_imported_functions.h, line 0, character 0
+ ~kcg_imported_functions.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_xml_filter_out.scade, line 0, character 0
+ ~kcg_xml_filter_out.scade
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file E:\TCT\OC\OCSimualtion20190524\src\app_oc\ScadeCode\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+$**************  SCADETOC Version 18.2 (build i9) **************
+** Generation date: 2020-03-25T17:27:53
+** sc2c.log
+*************************************************************$
