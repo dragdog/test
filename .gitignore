@@ -1,10 +1,14 @@
 Debug/*
+Release/*
 ipch/*
 PrtclLog/*
 .log
 .obj
 *.opensdf
+*.sdf
+*.suo
 
 *.obj
 *.tlog
 *.pdb
+*.7z
