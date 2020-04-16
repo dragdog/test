@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F8C0CC1-E44D-4AD6-A9A5-D6106398FCD2}</ProjectGuid>
+    <RootNamespace>OCSimulation</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>OCSimulation</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Work-TCT\6%40CarToCarOC\0%40SoftwareSource\OCSimualtion20190524\src\app_oc\MultSwitch;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\src\app_oc\ScadeCode\src;.\src\app_oc\Main;.\src\app_oc\Initial;.\src\app_oc\DataConfig;.\src\app_oc\Common;.\src\app_oc\CommandMan;.\src\app_oc\ScadeCode;.\src\ci_comm_lib\common_dqu_rssp;.\src\ci_comm_lib\common_rssp;.\src\ci_comm_lib\common_rssp_record_config;.\src\ci_comm_lib\dqu_idmap_common;.\src\app_oc\Switch;.\src\app_oc\Signal;.\src\app_oc\ESB;.\src\app_oc\PSD;.\src\app_oc\QueryFiles;.\src\ci_comm_lib\dqu_emap_common;.\src\ci_comm_lib\rssp_record_cbtc1\rssp_record_config_cbtc;.\src\ci_comm_lib\rssp2_record_config_cbtc;.\src\ci_comm_lib\rsspii_cbtc;.\src\ci_comm_lib\redun_record_cbtc\dqu_rp_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig;.\src\ci_comm_lib\sfp_record_cbtc1\dqu_sfp_cbtc;.\src\ci_comm_lib\redun_record_cbtc\redun_cbtc;.\src\ci_comm_lib\redun_record_cbtc\redun_record_config_cbtc;.\src\ci_comm_lib\dqu_rsspii_cbtc;.\src\ci_comm_lib\rssp_record_cbtc1\dqu_rssp_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_record_config_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\dqu_rsr_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1;.\src\pu_subci_ci\APP\Prtcl\debug_infor;.\src\app_oc\2oo2;.\src\ci_comm_lib\dqu_fsfb_ci_ci2;.\src\ci_comm_lib\dqu_cbtc_common;.\src\ci_comm_lib\dqu_dfs_common;.\src\main\RecordClass;.\src\app_oc\Relay;.\src\ci_comm_lib\protocol_cbtc_cpk_sc;.\src\ci_comm_lib\fsfb_cbtc_ci_ci2;.\src\main\2oo2;.\src\PU13_integration_config;.\src\ci_comm_lib\rssp_record_cbtc1\rssp_cbtc1;.\src\app_oc\System;.\src\ci_comm_lib\sfp_record_cbtc1\sfp_record_config_cbtc;.\src\ci_comm_lib\dqu_protocol_cbtc_cpk_sc;.\src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc;.\src\ci_comm_lib\commoncode_vxworks\commoncode_config_vxworks;.\src\main;.\src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common;.\src\ci_comm_lib\rssp_record_cbtc1\dqu_rssp_cbtc%3b.\src\ci_comm_lib\rssp_record_cbtc1\rssp_cbtc1%3b.\src\ci_comm_lib\rssp_record_cbtc1\rssp_record_config_cbtc%3b.\src\ci_comm_lib\rssp2_record_config_cbtc%3b.\src\ci_comm_lib\rsspii_cbtc%3b.\src\ci_comm_lib\sfp_record_cbtc1\dqu_sfp_cbtc%3b.\src\ci_comm_lib\sfp_record_cbtc1\sfp_record_config_cbtc;.\src\ci_comm_lib\dqu_rsspii_cbtc%3b.\src\ci_comm_lib\fsfb_cbtc_ci_ci2%3b.\src\ci_comm_lib\protocol_cbtc_cpk_sc%3b.\src\ci_comm_lib\redun_record_cbtc\dqu_rp_cbtc%3b.\src\ci_comm_lib\redun_record_cbtc\redun_cbtc%3b.\src\ci_comm_lib\redun_record_cbtc\redun_record_config_cbtc%3b.\src\ci_comm_lib\rsr_record_cbtc\dqu_rsr_cbtc%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_record_config_cbtc;.\src\Prtcl\rsr_record_cbtc\rsr_record_config_cbtc%3b.\src\ci_comm_lib\rsspii_cbtc%3b.\src\ci_comm_lib\dqu_dfs_common%3b.\src\ci_comm_lib\dqu_cbtc_common%3b.\src\ci_comm_lib\dqu_emap_common%3b.\src\ci_comm_lib\dqu_fsfb_ci_ci2%3b.\src\ci_comm_lib\dqu_protocol_cbtc_cpk_sc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig%3b.\src\app_subci_ci\ciapp\Relay%3b.\src\main\RecordClass%3b.\src\app_subci_ci\ciapp\System%3b.\src\app_subci_ci\ciapp\Main%3b.\src\app_subci_ci\ciapp\2oo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <EnablePREfast>true</EnablePREfast>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\src\app_oc\ESB;.\src\app_oc\System;.\src\app_oc\Switch;.\src\app_oc\MultSwitch;.\src\app_oc\PSD;.\src\app_oc\CommandMan;.\src\app_oc\ParsePack;.\src\app_oc\DataConfig;.\src\app_oc\Common;.\src\app_oc\ScadeCode;.\src\ci_comm_lib\common_rssp_record_config;.\src\ci_comm_lib\common_rssp;.\src\ci_comm_lib\common_dqu_rssp;.\src\ci_comm_lib\dqu_idmap_common;.\src\app_oc\Signal;.\src\app_oc\QueryFiles;.\src\ci_comm_lib\rssp_record_cbtc1\rssp_record_config_cbtc;.\src\ci_comm_lib\rssp2_record_config_cbtc;.\src\ci_comm_lib\rsspii_cbtc;.\src\ci_comm_lib\redun_record_cbtc\dqu_rp_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig;.\src\ci_comm_lib\sfp_record_cbtc1\dqu_sfp_cbtc;.\src\ci_comm_lib\redun_record_cbtc\redun_cbtc;.\src\ci_comm_lib\redun_record_cbtc\redun_record_config_cbtc;.\src\ci_comm_lib\dqu_rsspii_cbtc;.\src\ci_comm_lib\rssp_record_cbtc1\dqu_rssp_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_record_config_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\dqu_rsr_cbtc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1;.\src\pu_subci_ci\APP\Prtcl\debug_infor;.\src\app_oc\2oo2;.\src\ci_comm_lib\dqu_fsfb_ci_ci2;.\src\ci_comm_lib\dqu_cbtc_common;.\src\ci_comm_lib\dqu_dfs_common;.\src\ci_comm_lib\dqu_emap_common;.\src\app_oc\Main;.\src\main\RecordClass;.\src\app_oc\Relay;.\src\ci_comm_lib\protocol_cbtc_cpk_sc;.\src\ci_comm_lib\fsfb_cbtc_ci_ci2;.\src\main\2oo2;.\src\PU13_integration_config;.\src\ci_comm_lib\rssp_record_cbtc1\rssp_cbtc1;.\src\ci_comm_lib\sfp_record_cbtc1\sfp_record_config_cbtc;.\src\ci_comm_lib\dqu_protocol_cbtc_cpk_sc;.\src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc;.\src\ci_comm_lib\commoncode_vxworks\commoncode_config_vxworks;.\src\main;.\src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common;.\src\ci_comm_lib\rssp_record_cbtc1\dqu_rssp_cbtc%3b.\src\ci_comm_lib\rssp_record_cbtc1\rssp_cbtc1%3b.\src\ci_comm_lib\rssp_record_cbtc1\rssp_record_config_cbtc%3b.\src\ci_comm_lib\rssp2_record_config_cbtc%3b.\src\ci_comm_lib\rsspii_cbtc%3b.\src\ci_comm_lib\sfp_record_cbtc1\dqu_sfp_cbtc%3b.\src\ci_comm_lib\sfp_record_cbtc1\sfp_record_config_cbtc;.\src\ci_comm_lib\dqu_rsspii_cbtc%3b.\src\ci_comm_lib\fsfb_cbtc_ci_ci2%3b.\src\ci_comm_lib\protocol_cbtc_cpk_sc%3b.\src\ci_comm_lib\redun_record_cbtc\dqu_rp_cbtc%3b.\src\ci_comm_lib\redun_record_cbtc\redun_cbtc%3b.\src\ci_comm_lib\redun_record_cbtc\redun_record_config_cbtc%3b.\src\ci_comm_lib\rsr_record_cbtc\dqu_rsr_cbtc%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_record_config_cbtc;.\src\Prtcl\rsr_record_cbtc\rsr_record_config_cbtc%3b.\src\ci_comm_lib\rsspii_cbtc%3b.\src\ci_comm_lib\dqu_dfs_common%3b.\src\ci_comm_lib\dqu_cbtc_common%3b.\src\ci_comm_lib\dqu_emap_common%3b.\src\ci_comm_lib\dqu_fsfb_ci_ci2%3b.\src\ci_comm_lib\dqu_protocol_cbtc_cpk_sc;.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig%3b.\src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig%3b.\src\app_subci_ci\ciapp\Relay%3b.\src\main\RecordClass%3b.\src\app_subci_ci\ciapp\System%3b.\src\app_subci_ci\ciapp\Main%3b.\src\app_subci_ci\ciapp\2oo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\app_oc\MultSwitch\MultSwitchConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\MultSwitch\MultSwitchDataManage.c" />
+    <ClCompile Include="src\app_oc\2oo2\2oo2DataTransferManage.c" />
+    <ClCompile Include="src\app_oc\2oo2\2oo2InterfaceDataManage.c" />
+    <ClCompile Include="src\app_oc\CommandMan\PointCommandManage.c" />
+    <ClCompile Include="src\app_oc\common\GLOBALVAR.c" />
+    <ClCompile Include="src\app_oc\DataConfig\DataConfigure.c" />
+    <ClCompile Include="src\app_oc\DataManage\DeviceConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\DataManage\DeviceDataManage.c" />
+    <ClCompile Include="src\app_oc\ERROR\ErrorDataManage.c" />
+    <ClCompile Include="src\app_oc\ESB\ESBConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\ESB\ESBDataManage.c" />
+    <ClCompile Include="src\app_oc\HLHTMsgHead\HLHTCommonDataPacketHead.c" />
+    <ClCompile Include="src\app_oc\HLHTMsgHead\HLHTHeadContexManage.c" />
+    <ClCompile Include="src\app_oc\Indicator\IndicatorConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\Indicator\IndicatorDataManage.c" />
+    <ClCompile Include="src\app_oc\Initial\ConfigDataReadManage.c" />
+    <ClCompile Include="src\app_oc\Initial\InitialProcess.c" />
+    <ClCompile Include="src\app_oc\Main\MainApp.c" />
+    <ClCompile Include="src\app_oc\Main\OCmain.c" />
+    <ClCompile Include="src\app_oc\MultSwitch\MultSwitchConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\MultSwitch\MultSwitchDataManage.c" />
+    <ClCompile Include="src\app_oc\ParsePack\ParsePackAtsData.c" />
+    <ClCompile Include="src\app_oc\ParsePack\ParsePackIoData.c" />
+    <ClCompile Include="src\app_oc\ParsePack\ParsePackLeuData.c" />
+    <ClCompile Include="src\app_oc\ParsePack\ParsePackManage.c" />
+    <ClCompile Include="src\app_oc\ParsePack\ParsePackPlatformData.c" />
+    <ClCompile Include="src\app_oc\ParsePack\ParsePackTmcData.c" />
+    <ClCompile Include="src\app_oc\ParsePack\ParsePackVobcData.c" />
+    <ClCompile Include="src\app_oc\PSD\PSDConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\PSD\PSDDataManage.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\commonQueryStruDef.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCIInit.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCIInterFace.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCIJDQStruFrmChar.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCIJDQStruInit.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCILSStruFrmChar.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCILSStruInit.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCIPZStruFrmChar.c" />
+    <ClCompile Include="src\app_oc\QueryFiles\dquCIReadCommonChar.c" />
+    <ClCompile Include="src\app_oc\Relay\RelayConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\Relay\RelayDataManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\AddLockManage_each_SwitchManage_AddLockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\AddLock_MultSwitch_C1_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\AddLock_MultSwitch_C2_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\AddLock_MultSwitch_C3_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\AddLock_MultSwitch_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\ATSDeleteLock_SwitchManage_ATSDeleteLockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\ATSLockCmdProc_SwitchManage_AddLockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\ATSLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\ATSLockDeleteManage_each_SwitchManage_ATSDeleteLockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\CmdValidityManage_Lock_SwitchCommandInvalidManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\DATrainCmdProc_each_TrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\DATrainCmdProc_TrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_C1_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_C2_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_C3_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\FindHoldTrain_HoldTrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\FindInsertIndexByFlag_TrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\FindInsertIndexPhySecBlock_PhySecBlockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\FindSignalSource_SignalCtrl.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\FindSwitchByATSLockDelCmd_SwitchManage_ATSDeleteLockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\FindULockFlagFalse_C_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\FindULockFlagFalse_MultSwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\GetInsertLocation_HoldTrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\GetSwitchMoveState_SwitchManage_MoveStateManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\HCOCLockCmdProc_SwitchManage_AddLockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\HCOCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\HoldTrainManage_each_HoldTrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\HoldTrainManage_HoldTrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\JumpTrainManage_each_JumpTrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\JumpTrainManage_JumpTrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\kcg_consts.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\kcg_types.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\LockCmdIsValidByATS_Lock_SwitchCommandInvalidManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\LockCmdIsValidBySwitch_Lock_SwitchCommandInvalidManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\PhySecBlockManage_each1_PhySecBlockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\PhySecBlockManage_each2_PhySecBlockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\PhySecBlockManage_PhySecBlockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\PowerLockDelManage_PowerLockDeleteManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\RegionBlockManage_RegionBlockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\ScadeOCPeriodMain.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\SignalCtrl_SignalCtrl.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\src\ManualCode.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\SwitchAddorDelLock_SwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\SwitchCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\SwitchManage_each_SwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\SwitchManage_SwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\SwitchNeedMove_SwitchManage_MoveStateManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\SwitchNeedReset_each_SwitchManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\TrainInfoValidManage_TrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\TrainIsLCT.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\TrainIsVT.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\TrainManage_TrainManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\TSRManage_each_TSRManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\TSRManage_TSRManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\VOBCorTMCLockCmdProc_SwitchManage_AddLockManage.c" />
+    <ClCompile Include="src\app_oc\ScadeCode\VOBCorTMCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.c" />
+    <ClCompile Include="src\app_oc\Section\AxisSectionConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\Section\AxisSectionDataManage.c" />
+    <ClCompile Include="src\app_oc\Section\LogicSectionConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\Section\LogicSectionDataManage.c" />
+    <ClCompile Include="src\app_oc\Section\PhysicalSectionConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\Section\PhysicalSectionDataManage.c" />
+    <ClCompile Include="src\app_oc\Signal\SignalConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\Signal\SignalDataManage.c" />
+    <ClCompile Include="src\app_oc\SPKS\SpksConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\SPKS\SpksDataManage.c" />
+    <ClCompile Include="src\app_oc\Switch\SwitchConfigDataManage.c" />
+    <ClCompile Include="src\app_oc\Switch\SwitchDataManage.c" />
+    <ClCompile Include="src\app_oc\System\SystemParameterManage.c" />
+    <ClCompile Include="src\app_oc\Transmit\TransmitStateDataManage.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CbtcVersion.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\commonVersion.c" />
+    <ClCompile Include="src\ci_comm_lib\common_dqu_rssp\dsuRedunFunc.c" />
+    <ClCompile Include="src\ci_comm_lib\common_dqu_rssp\dsuRsspFunc.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RedunInterface.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RsspCommonWl.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RsspInitWl.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RsspLnkNodeMgrWl.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RsspOutputWl.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RsspReciveWl.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RsspTmpMsgLnkCommonWl.c" />
+    <ClCompile Include="src\ci_comm_lib\common_rssp\RsspWl.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_dfs_common\dquCbtcType.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_idmap_common\dquIdmapInit.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_idmap_common\dquIdmapQuery.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_idmap_common\dsuIdmapVar.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\CM_Base.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\CM_RingQueue.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\PrtclBaseParse.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\PrtclParseManage.c" />
+    <ClCompile Include="src\main\ccov\ccov.cpp" />
+    <ClCompile Include="src\main\ccov\Ccov_RsspII.cpp" />
+    <ClCompile Include="src\main\ccov\Ccov_RSSPII_Parser.cpp" />
+    <ClCompile Include="src\main\ccov\Ccov_TcpSer.cpp" />
+    <ClCompile Include="CiMain.cpp" />
+    <ClCompile Include="src\main\CiSimulation.cpp" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonBit.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonCRC.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonMemory.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonQueue.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonRecord.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonStack.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\Convert.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\crc.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CRC16.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CRC32.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\DataPackage.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\des.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_dfs_common\dfsDataRead.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_cbtc_common\dquCbtcConfigData.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_dfs_common\dquCbtcType.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_emap_common\dquEmapInit.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_emap_common\dquQuery.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_emap_common\dquQueryExp.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_emap_common\dquStructInit.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_fsfb_ci_ci2\dsuFsfbFunc.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_protocol_cbtc_cpk_sc\dsuProtclFun.c" />
+    <ClCompile Include="src\ci_comm_lib\sfp_record_cbtc1\dqu_sfp_cbtc\dsuRelatedDeal.c" />
+    <ClCompile Include="src\ci_comm_lib\redun_record_cbtc\dqu_rp_cbtc\dsuRpFunc.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\dqu_rsr_cbtc\dsuRsrFunc.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_rsspii_cbtc\dsuRssp2Func.c" />
+    <ClCompile Include="src\ci_comm_lib\dqu_emap_common\dsuVar.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\FFFE.c" />
+    <ClCompile Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbLnkNodeMgr.c" />
+    <ClCompile Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbMessageInfo.c" />
+    <ClCompile Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbProtcl.c" />
+    <ClCompile Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbProtclCommon.c" />
+    <ClCompile Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\protclInterFun.c" />
+    <ClCompile Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\ProtclManage.c" />
+    <ClCompile Include="src\main\ini\ReadCcovConfigInfo.cpp" />
+    <ClCompile Include="src\main\DeviceInfoManager\readxmltodata.cpp" />
+    <ClCompile Include="src\main\RecordClass\RecordClass.cpp" />
+    <ClCompile Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\RpHandleInterface.c" />
+    <ClCompile Include="src\ci_comm_lib\redun_record_cbtc\redun_cbtc\RpInterface.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\Rsr.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\RsrCommon.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\Rssp2.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\Rssp2Common.c" />
+    <ClCompile Include="src\ci_comm_lib\rsspii_cbtc\Rssp2LnkNodeMgr.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspCommon.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspInit.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspLnkNodeMgr.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspOutput.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspRecive.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspTmpMsgLnkCommon.c" />
+    <ClCompile Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpLinkManage.c" />
+    <ClCompile Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtcl_Output.c" />
+    <ClCompile Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtclCommon.c" />
+    <ClCompile Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtclInit.c" />
+    <ClCompile Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtclReceive.c" />
+    <ClCompile Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpWindowsTimeCounter.c" />
+    <ClCompile Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig\sigInterface.c" />
+    <ClCompile Include="src\main\2oo2\simulation2oo2.c" />
+    <ClCompile Include="src\main\ccov\TcpConnection_Ser.cpp" />
+    <ClCompile Include="src\main\DeviceInfoManager\tinyxml\tinystr.cpp" />
+    <ClCompile Include="src\main\DeviceInfoManager\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="src\main\DeviceInfoManager\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="src\main\DeviceInfoManager\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\Translate0203.c" />
+    <ClCompile Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\VobcNetPack.c" />
+    <ClCompile Include="src\pu_subci_ci\APP\Prtcl\debug_infor\vxworks_debug_assistant.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\app_oc\multswitch\multswitchconfigdatamanage.h" />
+    <ClInclude Include="src\app_oc\MultSwitch\MultSwitchDataManage.h" />
+    <ClInclude Include="src\app_oc\multswitch\multswitchdefine.h" />
+    <ClInclude Include="src\app_oc\2oo2\2oo2DataTransferManage.h" />
+    <ClInclude Include="src\app_oc\2oo2\2oo2InterfaceDataManage.h" />
+    <ClInclude Include="src\app_oc\CommandMan\PointCommandManage.h" />
+    <ClInclude Include="src\app_oc\common\GLOBALVAR.h" />
+    <ClInclude Include="src\app_oc\common\MacDefine.h" />
+    <ClInclude Include="src\app_oc\Common\maintain.h" />
+    <ClInclude Include="src\app_oc\Common\TypesDef.h" />
+    <ClInclude Include="src\app_oc\DataConfig\DataConfigure.h" />
+    <ClInclude Include="src\app_oc\DataManage\DeviceConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\DataManage\DeviceDataManage.h" />
+    <ClInclude Include="src\app_oc\ERROR\ErrorDataManage.h" />
+    <ClInclude Include="src\app_oc\ERROR\ErrorDefine.h" />
+    <ClInclude Include="src\app_oc\ESB\ESBConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\ESB\ESBDataManage.h" />
+    <ClInclude Include="src\app_oc\ESB\ESBDefine.h" />
+    <ClInclude Include="src\app_oc\HLHTMsgHead\HLHTCommonDataPacketHead.h" />
+    <ClInclude Include="src\app_oc\HLHTMsgHead\HLHTHeadContexManage.h" />
+    <ClInclude Include="src\app_oc\Indicator\IndicatorConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\Indicator\IndicatorDataManage.h" />
+    <ClInclude Include="src\app_oc\Indicator\IndicatorDefine.h" />
+    <ClInclude Include="src\app_oc\Initial\ConfigDataReadManage.h" />
+    <ClInclude Include="src\app_oc\Initial\InitialProcess.h" />
+    <ClInclude Include="src\app_oc\Main\MainApp.h" />
+    <ClInclude Include="src\app_oc\Main\OCmain.h" />
+    <ClInclude Include="src\app_oc\multswitch\multswitchconfigdatamanage.h" />
+    <ClInclude Include="src\app_oc\MultSwitch\MultSwitchDataManage.h" />
+    <ClInclude Include="src\app_oc\multswitch\multswitchdefine.h" />
+    <ClInclude Include="src\app_oc\ParsePack\CiInterfaceDefine.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackAtsData.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackDefine.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackIoData.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackLeuData.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackManage.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackPlatformData.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackTmcData.h" />
+    <ClInclude Include="src\app_oc\ParsePack\ParsePackVobcData.h" />
+    <ClInclude Include="src\app_oc\PSD\PSDConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\PSD\PSDDataManage.h" />
+    <ClInclude Include="src\app_oc\PSD\PSDDefine.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\CiConfigData.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\commonQueryStruDef.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIInit.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIInterFace.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dqucijdqstru.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIJDQStruFrmChar.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIJDQStruInit.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCILSStru.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCILSStruFrmChar.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCILSStruInit.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIPZStru.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIPZStruFrmChar.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIReadCommonChar.h" />
+    <ClInclude Include="src\app_oc\QueryFiles\dquCIStru.h" />
+    <ClInclude Include="src\app_oc\Relay\RelayConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\Relay\RelayDataManage.h" />
+    <ClInclude Include="src\app_oc\Relay\RelayDefine.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\AddLockManage_each_SwitchManage_AddLockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\AddLock_MultSwitch_C1_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\AddLock_MultSwitch_C2_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\AddLock_MultSwitch_C3_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\AddLock_MultSwitch_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\ATSDeleteLock_SwitchManage_ATSDeleteLockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\ATSLockCmdProc_SwitchManage_AddLockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\ATSLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\ATSLockDeleteManage_each_SwitchManage_ATSDeleteLockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\CmdValidityManage_Lock_SwitchCommandInvalidManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\DATrainCmdProc_each_TrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\DATrainCmdProc_TrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_C1_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_C2_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_C3_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\DeleteLock_MultSwitch_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\FindHoldTrain_HoldTrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\FindInsertIndexByFlag.h" />
+    <ClInclude Include="src\app_oc\scadecode\findinsertindexbyflag_trainmanage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\FindInsertIndexPhySecBlock_PhySecBlockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\FindSignalSource_SignalCtrl.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\FindSwitchByATSLockDelCmd_SwitchManage_ATSDeleteLockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\FindULockFlagFalse_C_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\FindULockFlagFalse_MultSwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\GetInsertLocation_HoldTrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\GetSwitchMoveState_SwitchManage_MoveStateManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\HCOCLockCmdProc_SwitchManage_AddLockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\HCOCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\HoldTrainManage_each_HoldTrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\HoldTrainManage_HoldTrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\JumpTrainManage_each_JumpTrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\JumpTrainManage_JumpTrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\kcg_assign.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\kcg_consts.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\kcg_imported_functions.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\kcg_imported_types.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\kcg_sensors.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\kcg_types.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\LockCmdIsValidByATS_Lock_SwitchCommandInvalidManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\LockCmdIsValidBySwitch_Lock_SwitchCommandInvalidManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\PhySecBlockManage_each1_PhySecBlockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\PhySecBlockManage_each2_PhySecBlockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\PhySecBlockManage_PhySecBlockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\PowerLockDelManage_PowerLockDeleteManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\RegionBlockManage_RegionBlockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\ScadeOCPeriodMain.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\SignalCtrl_SignalCtrl.h" />
+    <ClInclude Include="src\app_oc\scadecode\src\macdefine.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\src\ManualCode.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\SwitchAddorDelLock_SwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\SwitchCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\SwitchManage_each_SwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\SwitchManage_SwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\SwitchNeedMove_SwitchManage_MoveStateManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\SwitchNeedReset_each_SwitchManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\TrainInfoValidManage_TrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\TrainIsLCT.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\TrainIsVT.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\TrainManage_TrainManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\TSRManage_each_TSRManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\TSRManage_TSRManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\user_macros.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\VOBCorTMCLockCmdProc_SwitchManage_AddLockManage.h" />
+    <ClInclude Include="src\app_oc\ScadeCode\VOBCorTMCLockCmdValidityManage_each_Lock_SwitchCommandInvalidManage.h" />
+    <ClInclude Include="src\app_oc\Section\AxisSectionConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\Section\AxisSectionDataManage.h" />
+    <ClInclude Include="src\app_oc\Section\LogicSectionConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\Section\LogicSectionDataManage.h" />
+    <ClInclude Include="src\app_oc\Section\PhysicalSectionConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\Section\PhysicalSectionDataManage.h" />
+    <ClInclude Include="src\app_oc\Section\SectionDefine.h" />
+    <ClInclude Include="src\app_oc\Signal\SignalConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\Signal\SignalDataManage.h" />
+    <ClInclude Include="src\app_oc\Signal\SignalDefine.h" />
+    <ClInclude Include="src\app_oc\SPKS\SpksConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\SPKS\SpksDataManage.h" />
+    <ClInclude Include="src\app_oc\SPKS\SpksDefine.h" />
+    <ClInclude Include="src\app_oc\Switch\SwitchConfigDataManage.h" />
+    <ClInclude Include="src\app_oc\Switch\SwitchDataManage.h" />
+    <ClInclude Include="src\app_oc\Switch\SwitchDefine.h" />
+    <ClInclude Include="src\app_oc\System\CiSystemDefine.h" />
+    <ClInclude Include="src\app_oc\System\SystemConfigDefine.h" />
+    <ClInclude Include="src\app_oc\System\SystemParameterManage.h" />
+    <ClInclude Include="src\app_oc\Transmit\TransmitDefine.h" />
+    <ClInclude Include="src\app_oc\Transmit\TransmitStateDataManage.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CbtcVersion.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\commonVersion.h" />
+    <ClInclude Include="src\ci_comm_lib\common_dqu_rssp\dsuRedunFunc.h" />
+    <ClInclude Include="src\ci_comm_lib\common_dqu_rssp\dsuRsspDataStru.h" />
+    <ClInclude Include="src\ci_comm_lib\common_dqu_rssp\dsuRsspFunc.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RedunInterface.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RedunPlatform.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RsspCommonWl.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RsspIFWl.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RsspLnkNodeMgrWl.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RsspRecordDelareWl.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RsspStructWl.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RsspTmpMsgLnkCommonWl.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp\RsspWl.h" />
+    <ClInclude Include="src\ci_comm_lib\common_rssp_record_config\RsspConfigWl.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_dfs_common\dquCbtcType.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_idmap_common\dquIdmapInit.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_idmap_common\dquIdmapQuery.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_idmap_common\dsuIdmapStruct.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_idmap_common\dsuIdmapVar.h" />
+    <ClInclude Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\protclstruct.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\CM_Base.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\CM_Define.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\CM_RingQueue.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\CM_Type.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\PrtclBaseParse.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\PrtclParseManage.h" />
+    <ClInclude Include="src\main\ccov\ccov.h" />
+    <ClInclude Include="src\main\ccov\Ccov_RsspII.h" />
+    <ClInclude Include="src\main\ccov\Ccov_RSSPII_Parser.h" />
+    <ClInclude Include="src\main\ccov\Ccov_TcpCallBackDef.h" />
+    <ClInclude Include="src\main\ccov\Ccov_TcpSer.h" />
+    <ClInclude Include="src\PU13_integration_config\ci_integrate_config.h" />
+    <ClInclude Include="src\main\CiSimulation.h" />
+    <ClInclude Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\CM_Define.h" />
+    <ClInclude Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\CM_Type.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonBit.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_config_vxworks\CommonConfig.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonCRC.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonMemory.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonQueue.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonRecord.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonStack.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CommonTypes.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\Convert.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\crc.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CRC16.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\CRC32.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\DataPackage.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\des.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_dfs_common\dfsDataRead.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_cbtc_common\dquCbtcConfigData.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_cbtc_common\dquCbtcType.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_dfs_common\dquDataTypeDefine.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dquEmapInit.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dquQuery.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dquQueryExp.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dquStructInit.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dquVobcCommonStru.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dsuEmapDefine.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_fsfb_ci_ci2\dsuFsfbDataStru.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_fsfb_ci_ci2\dsuFsfbFunc.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_protocol_cbtc_cpk_sc\dsuProtclFun.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\dqu_sfp_cbtc\dsuRelatedDeal.h" />
+    <ClInclude Include="src\ci_comm_lib\redun_record_cbtc\dqu_rp_cbtc\dsuRpFunc.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\dqu_rsr_cbtc\dsuRsrDataStru.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\dqu_rsr_cbtc\dsuRsrFunc.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_rsspii_cbtc\dsuRssp2DataStru.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_rsspii_cbtc\dsuRssp2Func.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dsuStruct.h" />
+    <ClInclude Include="src\ci_comm_lib\dqu_emap_common\dsuVar.h" />
+    <ClInclude Include="src\main\ccov\EndPointConStatus.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\FFFE.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbConfig.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbLnkNodeMgr.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbMessageInfo.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbProtcl.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbProtclCommon.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbProtclConfigMessage.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\fsfbProtclStruct.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\FsfbRecordDelare.h" />
+    <ClInclude Include="src\ciapp\LogicProcess\IntelockLogicCheck.h" />
+    <ClInclude Include="src\ciapp\OverlapLockCond\OverlapLockCondConfigDataManage.h" />
+    <ClInclude Include="src\ciapp\OverlapLockCond\OverlapLockCondDataManage.h" />
+    <ClInclude Include="src\ciapp\OverlapLockCond\OverlapLockCondDefine.h" />
+    <ClInclude Include="src\main\2oo2\processor.h" />
+    <ClInclude Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\protclInterFun.h" />
+    <ClInclude Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\ProtclManage.h" />
+    <ClInclude Include="src\ci_comm_lib\protocol_cbtc_cpk_sc\protclMgeCfg.h" />
+    <ClInclude Include="src\main\ini\ReadCcovConfigInfo.h" />
+    <ClInclude Include="src\main\DeviceInfoManager\readxmltodata.h" />
+    <ClInclude Include="src\main\RecordClass\RecordClass.h" />
+    <ClInclude Include="src\ci_comm_lib\redun_record_cbtc\redun_record_config_cbtc\RpConfig.h" />
+    <ClInclude Include="src\ci_comm_lib\redun_record_cbtc\redun_cbtc\RpDeclare.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\RpHandleInterface.h" />
+    <ClInclude Include="src\ci_comm_lib\fsfb_cbtc_ci_ci2\RpHandlePlatform.h" />
+    <ClInclude Include="src\ci_comm_lib\redun_record_cbtc\redun_cbtc\RpInterface.h" />
+    <ClInclude Include="src\ci_comm_lib\redun_record_cbtc\redun_cbtc\RpPlatform.h" />
+    <ClInclude Include="src\ci_comm_lib\redun_record_cbtc\redun_cbtc\RpStruct.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\Rsr.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\RsrCommon.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_record_config_cbtc\RsrConfig.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\RsrPlatform.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\RsrRecordDelare.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\Rssp2.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\Rssp2Common.h" />
+    <ClInclude Include="src\ci_comm_lib\rssp2_record_config_cbtc\Rssp2Configl.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\Rssp2LnkNodeMgr.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\Rssp2Struct.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspCommon.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspIF.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspLnkNodeMgr.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspStruct.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\rssp\RsspTmpMsgLnkCommon.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_record_config_cbtc\sfpConfig.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpDeclare.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpLinkManage.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpplatform.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtcl_Output.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtclCommon.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtclReceive.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpPrtclStruct.h" />
+    <ClInclude Include="src\ci_comm_lib\sfp_record_cbtc1\sfp_cbtc\sfpWindowsTimeCounter.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig\sigDeclare.h" />
+    <ClInclude Include="src\ci_comm_lib\rsr_record_cbtc\rsr_cbtc1\sig\sigInterface.h" />
+    <ClInclude Include="src\main\SimDef\SimDef.h" />
+    <ClInclude Include="src\main\ccov\TcpConnection_Ser.h" />
+    <ClInclude Include="src\main\DeviceInfoManager\tinyxml\tinystr.h" />
+    <ClInclude Include="src\main\DeviceInfoManager\tinyxml\tinyxml.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\Translate0203.h" />
+    <ClInclude Include="src\ci_comm_lib\rsspii_cbtc\typedefine.h" />
+    <ClInclude Include="src\ci_comm_lib\commoncode_vxworks\commoncode_cbtc\common\VobcNetPack.h" />
+    <ClInclude Include="src\main\2oo2\vxWorks.h" />
+    <ClInclude Include="src\pu_subci_ci\APP\Prtcl\debug_infor\vxworks_debug_assistant.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\CI.FS" />
+    <None Include="CI.FS" />
+    <None Include="ConfigYCB2\DevIpConfig.xml" />
+    <None Include="ConfigYCB2\IPConfig.ini" />
+    <None Include="ConfigTCC5.0\IPConfig.ini--" />
+    <None Include="ConfigYCB2\LEUCICFG.xml" />
+    <None Include="ConfigYCB2\LocalCiId.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="OCSimulation.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

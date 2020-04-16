@@ -1,0 +1,10 @@
+Debug/*
+ipch/*
+PrtclLog/*
+.log
+.obj
+*.opensdf
+
+*.obj
+*.tlog
+*.pdb
